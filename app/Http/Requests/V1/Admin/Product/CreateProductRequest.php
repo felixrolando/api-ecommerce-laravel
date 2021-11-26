@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\V1\Client;
+namespace App\Http\Requests\V1\Admin\Product;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateUserRequest extends FormRequest
+class CreateProductRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

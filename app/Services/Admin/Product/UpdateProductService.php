@@ -2,6 +2,6 @@
 
 namespace App\Services\Admin\Product;
 
-class UpdateProductService
+final class UpdateProductService
 {
 }

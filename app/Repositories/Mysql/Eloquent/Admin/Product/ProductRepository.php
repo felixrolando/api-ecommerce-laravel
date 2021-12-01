@@ -5,7 +5,7 @@ namespace  App\Repositories\Mysql\Eloquent\Admin\Product;
 use App\Repositories\Mysql\Eloquent\Admin\Product\ProductInterface;
 use App\Models\Product;
 
-class ProductRepository implements ProductInterface
+final class ProductRepository implements ProductInterface
 {
     public static function findById(int $id)
     {

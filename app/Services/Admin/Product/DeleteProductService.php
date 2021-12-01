@@ -2,6 +2,6 @@
 
 namespace App\Services\Admin\Product;
 
-class DeleteProductService
+final class DeleteProductService
 {
 }

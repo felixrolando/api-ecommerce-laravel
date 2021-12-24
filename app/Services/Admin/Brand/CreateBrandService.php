@@ -16,19 +16,15 @@ final class CreateBrandService extends BaseService
 
     public function execute(array $data)
     {
-
-        return $data;
-
         try {
 
-            $brand[''] = $data[''];
-            $brand[''] = $data[''];
-            $brand[''] = $data[''];
+            $brand['name'] = $data['name'];
 
             $create_brand = $this->brandRepository->create($brand);
 
             return $create_brand;
-        } catch (\Throwable $th) {
+        } catch (\Exception $e) {
+            return $e->getMessage();
         }
     }
 

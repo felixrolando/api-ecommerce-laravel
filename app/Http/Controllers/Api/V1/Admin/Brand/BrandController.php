@@ -23,9 +23,9 @@ class BrandController extends Controller
     public function create(Request $request)
     {
         try {
-            $this->createBrandService->execute($request->all());
-        } catch (\Throwable $th) {
-            //throw $th;
+            return  $this->createBrandService->execute($request->all());
+        } catch (\Exception $e) {
+            return $e;
         }
     }
 

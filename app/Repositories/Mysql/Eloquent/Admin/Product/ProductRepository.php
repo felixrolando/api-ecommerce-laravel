@@ -7,19 +7,14 @@ use App\Models\Product;
 
 final class ProductRepository implements ProductInterface
 {
-    public static function findById(int $id)
+    public static function findById(int $id):Product
     {
         return Product::find($id);
     }
 
-    public function create(array $data)
+    public function create(array $data):Product
     {
-        return Product::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'username' => $data['email'],
-            'password' => $data
-        ]);
+        return Product::create($data);
     }
 
     public function update(int $id, array $data)

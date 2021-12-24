@@ -15,6 +15,11 @@ class ProductController extends Controller
         $this->createProductService = $createProductService;
     }
 
+    public function index()
+    {
+        return 'index product';
+    }
+
     public function create(Request $request)
     {
         try {
@@ -22,5 +27,15 @@ class ProductController extends Controller
         } catch (\Throwable $th) {
             //throw $th;
         }
+    }
+
+    public function update()
+    {
+        return 'update product';
+    }
+
+    public function delete()
+    {
+        return 'delete product';
     }
 }
